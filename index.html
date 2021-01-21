@@ -4,10 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
 </head>
 <body>
-    <button id="clickMe" onclick="startTimer()">set timer </button>
+    
+    
     <div id="timer">00:00</div>
+    <button id="click" onclick="startTimer(4,'timer')" >set timer</button>
+    
+<!--Vue proyect from Orally-->
+<section id="events">
+        <h2>events in action</h2>
+        <button v-on:click="add()">add </button>
+        <button v-on:click="reduce()">reduce</button>
+        <p>Result: {{counter}}</p>
+       <imput type="text" v-on:input="setName($event, 'angel')"></imput> 
+            <p>Your Name:{{name}}</p>
+            <form action="">
+                <input type="text">
+                <button>Sign Up</button>
+            </form>
+            
+    </section>
+    <!-- <script src="https://unpkg.com/vue@next"></script>
+    <script type="module">
+        import Vue from 'https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.esm.browser.js'
+      </script> -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
     <script src="index.js"></script>
 </body>
 </html>
